@@ -1,0 +1,191 @@
+/* ==== Base Styles ==== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+  background-image: url("Weather.jpg");
+  background-size: cover;
+  color: #fff;
+  min-height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*  Top Navigation Bar  */
+.top-footer {
+  padding: 15px 0;
+  background-color: rgba(35, 42, 61, 0.6);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  backdrop-filter: blur(6px);
+}
+
+.top-footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.top-footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.top-footer a:hover {
+  color: #1654da;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px 16px;
+  border-radius: 6px;
+}
+
+/* ==== Main Container ==== */
+.container {
+  background: rgba(255, 255, 255, 0.034);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 30px;
+  margin-top: 100px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  animation: slideFade 0.6s ease forwards;
+  opacity: 0;
+}
+
+@keyframes slideFade {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*  Inputs and Buttons  */
+input {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 20px;
+  background: #fff;
+  color: #66a6ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #f0f0f0;
+}
+
+/*  Greeting and Weather Display  */
+#greetingSection {
+  margin-top: 20px;
+  animation: fadeIn 0.8s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.weather-box {
+  background-color: rgba(44, 42, 42, 0.39);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  animation: scaleUp 0.5s ease;
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/*  Footer */
+.site-footer {
+  margin-top: 100px;
+  background-color: rgba(17, 18, 20, 0.7);
+  color: white;
+  padding: 30px 20px;
+  width: 100%;
+  backdrop-filter: blur(5px);
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.footer-left, .footer-center, .footer-right {
+  flex: 1;
+  min-width: 200px;
+}
+
+.contact-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: white;
+  color: #1743bb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contact-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffd700;
+}

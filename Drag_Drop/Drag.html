@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Match - Drag and Drop</title>
+  <link rel="stylesheet" href="Drag.css">
+</head>
+<body>
+  <h2>🧑‍🤝‍🧑 Match the User to Their Picture</h2>
+  <div class="box-container">
+    <div class="drop-box" data-name="Manaf">
+      <p>Manaf</p>
+    </div>
+    <div class="drop-box" data-name="Aisha">
+      <p>Aisha</p>
+    </div>
+    <div class="drop-box" data-name="Muheeb">
+      <p>Muheeb</p>
+    </div>
+    <div class="drop-box" data-name="Faruk">
+      <p>Faruk</p>
+    </div>
+    <div class="drop-box" data-name="Fawaz">
+      <p>Fawaz</p>
+    </div>
+  </div>
+
+  <h3>Drag the Pictures Below 👇</h3>
+  <div class="image-container">
+    <img src="Members_pics/Manaf.jpg" alt="Manaf" class="draggable" draggable="true" data-name="Alice">
+    <img src="Members_pics/Aisha.jpg" alt="Aisha" class="draggable" draggable="true" data-name="Bob">
+    <img src="Members_pics/Muheeeb.jpg" alt="Muheeb" class="draggable" draggable="true" data-name="Charlie">
+    <img src="Members_pics/Faruk.jpg" alt="Faruk" class="draggable" draggable="true" data-name="Diana">
+    <img src="Members_pics/Fawaz.jpg" alt="Fawaz" class="draggable" draggable="true" data-name="Evan">
+  </div>
+<div style="margin-top: 30px;">
+  <button id="resetBtn">🔄 Reset</button>
+  <a href="../Home.html">
+  <button>🏠 Back to Home</button>
+</a>
+
+  <script src="Drag.js"></script>
+</body>
+</html>
